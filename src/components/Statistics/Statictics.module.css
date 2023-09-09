@@ -1,0 +1,8 @@
+.statList {
+  padding: 0;
+  list-style: none;
+}
+
+.statItem:not(:last-child) {
+  margin-bottom: 5px;
+}

@@ -13,13 +13,8 @@ class App extends Component {
   };
 
   onLeaveFeedback = event => {
-    if (event.target.name === 'good') {
-      this.setState(prevState => ({ good: prevState.good + 1 }));
-    } else if (event.target.name === 'neutral') {
-      this.setState(prevState => ({ neutral: prevState.neutral + 1 }));
-    } else if (event.target.name === 'bad') {
-      this.setState(prevState => ({ bad: prevState.bad + 1 }));
-    }
+    let name = event.target.name;
+    this.setState(prevState => ({ [name]: prevState[name] + 1 }));
   };
 
   countTotalFeedback = (good, neutral, bad) => good + neutral + bad;

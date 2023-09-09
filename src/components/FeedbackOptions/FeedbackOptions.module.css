@@ -1,0 +1,19 @@
+.buttonList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 0 20px;
+}
+
+.optionButton {
+  padding: 5px 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.optionButton:hover,
+.optionButton:focus {
+  background-color: #63d97d;
+}
